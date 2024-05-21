@@ -151,3 +151,35 @@ a:link {
   color: black;
   text-decoration: none;
 }
+
+      /*Mobile*/
+      @media (max-width: 680px) {
+        .projects {
+          display: grid;
+          grid-template-rows: 35% 35% 35%;
+          grid-template-columns: 1fr;
+          gap: 5%;
+          width: 80%;
+          justify-content: center;
+          margin-bottom: 6rem;
+          /* border: 1px solid black; */
+        }
+        .heroImage {
+          height: 30vh;
+          background-repeat: no-repeat;
+          background-position: center center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .heroImage > h1 {
+          font-size: 1rem;
+          font-weight: 550;
+        }
+        .heroImage > h2 {
+          font-size: 2rem;
+          font-weight: normal;
+          margin-bottom: 2%;
+        }
+      }
