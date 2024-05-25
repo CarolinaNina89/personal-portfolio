@@ -16,13 +16,13 @@ body {
   background-color: #f6f6f6;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 15%);
 }
 .heroImage {
-  background-image: url("./images/abstrakt-pastell.jpg");
+  background-image: url("./images/colorexplosion5.png");
   height: 60vh;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +31,8 @@ body {
 .introduction {
   text-align: center;
   margin: 0;
+  color: #f6f6f6;
+  text-shadow: 5px 1px 7px #2b2331;
 }
 .heroImage > h1 {
   font-size: 1.5rem;
@@ -50,7 +52,7 @@ body {
   letter-spacing: 0.2rem;
   font-size: 1.5rem;
   font-weight: normal;
-  margin: 13% 0% 5% 0%;
+  margin: 8% 0% 5% 0%;
 }
 
 .projects {
@@ -88,7 +90,7 @@ body {
   margin: 0;
   padding: 0 0 3% 3%;
   text-align: left;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   /* border: 1px solid green; */
 }
 .aboutMeText {
@@ -103,7 +105,7 @@ body {
   padding-bottom: 2%;
   width: 80%;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   /* border: 1px solid red; */
 }
 .contact {
@@ -120,7 +122,7 @@ body {
   width: 80%;
   text-align: center;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 button {
@@ -133,53 +135,89 @@ button {
   font-weight: 700;
 }
 footer {
-  background-image: url("./images/abstrakt-pastell.jpg");
+  background-image: url("./images/colorexplosion5.png");
   width: 100%;
   height: 6vh;
   background-repeat: no-repeat;
-  background-position: bottom left;
+  background-position: bottom center;
   margin-top: 8rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
-footer > p {
-  padding-right: 2%;
+.footerText {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+footer > .footerText > p {
+  margin-left: 2%;
+  text-shadow: 5px 1px 6px #2b2331;
 }
 
 a:link {
-  color: black;
+  color: #f6f6f6;
   text-decoration: none;
 }
+a:visited {
+  color: #f6f6f6;
+}
 
-      /*Mobile*/
-      @media (max-width: 680px) {
-        .projects {
-          display: grid;
-          grid-template-rows: 35% 35% 35%;
-          grid-template-columns: 1fr;
-          gap: 5%;
-          width: 80%;
-          justify-content: center;
-          margin-bottom: 6rem;
-          /* border: 1px solid black; */
-        }
-        .heroImage {
-          height: 30vh;
-          background-repeat: no-repeat;
-          background-position: center center;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        .heroImage > h1 {
-          font-size: 1rem;
-          font-weight: 550;
-        }
-        .heroImage > h2 {
-          font-size: 2rem;
-          font-weight: normal;
-          margin-bottom: 2%;
-        }
-      }
+/*Mobile*/
+@media (max-width: 680px) {
+  body {
+    margin: 0;
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  .projects {
+    display: grid;
+    grid-template-rows: 35% 35% 35%;
+    grid-template-columns: 1fr;
+    gap: 5%;
+    width: 80%;
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+  .heroImage {
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroContent {
+    width: 100%;
+  }
+  .heroImage > h1 {
+    font-size: 1rem;
+    font-weight: 550;
+  }
+  .heroImage > h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 2%;
+  }
+  .introduction {
+    width: 80%;
+  }
+
+  .aboutMeText {
+    width: 90%;
+  }
+  .contact {
+    width: 90%;
+  }
+  .contact > p {
+    margin-bottom: 4%;
+  }
+  button {
+    font-size: 1rem;
+    padding: 2% 3%;
+  }
+}
